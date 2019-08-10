@@ -1,33 +1,39 @@
-.banner{
+.banner {
     background-color: #435058;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 10px 20px;
 }
-#titulo{
+
+#titulo {
     font-size: 150%;
     font-weight: bold;
     margin-right: 10px;
 }
-#titulo a{
+
+#titulo a {
     color: white;
     text-decoration: none;
 }
-#titulo a:hover{
+
+#titulo a:hover {
     color: #AAC0AA;
 }
 
-#menu{
+#menu {
     list-style: none;
     display: inline;
 }
-#menu li{
+
+#menu li {
     display: inline;
-    margin-right: 25px;
+    margin-right: 20px;
     padding-bottom: 3px;
 }
-#menu li:hover{
+
+#menu li:hover {
     border-bottom: 5px solid #AAC0AA;
 }
-#menu a{
+
+#menu a {
     text-decoration: none;
     color: white;
     font-size: 110%;
