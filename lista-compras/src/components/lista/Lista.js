@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import Menu from '../menu/Menu';
-import anterior from '../../img/anterior.png';
-export default  class Lista extends Component {
-  render() {
-    return (
-      <div>
-          <Menu 
-          logo={anterior}
-          anterior="/"
-          titulo="Minha lista"/>
-          Lista
-    </div>
-    );
-  }
-}
 
+import Menu from '../menu/Menu';
+import paginaAnterior from '../../img/paginaAnterior.png';
+
+export default class Lista extends Component {
+    render() {
+        return (
+            <div>
+                <Menu
+                    logo={paginaAnterior}
+                    paginaAnterior="/"
+                    titulo="Minha lista" />
+                Lista
+            </div>
+        );
+    }
+}

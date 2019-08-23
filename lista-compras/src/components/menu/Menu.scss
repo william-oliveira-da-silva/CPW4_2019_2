@@ -1,21 +1,23 @@
 @import '../Cores';
 @import '../../fonts/Fontes';
 
-.menu{
+.menu {
     font-family: $fonte-principal;
     background-color: $cor-menu;
-    color:white;
+    color: white;
     padding: 20px 10px;
     margin-bottom: 10px;
 
-    *{
+    * {
         vertical-align: middle;
     }
-    .logo{
+
+    .logo {
         width: 30px;
         margin-right: 20px;
     }
-    span{
+
+    span {
         font-size: 130%;
     }
 }

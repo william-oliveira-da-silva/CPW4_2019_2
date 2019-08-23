@@ -1,11 +1,12 @@
-@font-face{
+@font-face {
     font-family: 'item lista';
     src: url(./Courgette-Regular.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: 'principal';
     src: url(./Roboto-Regular.ttf);
 }
 
-$fonte-principal: 'principal';
 $fonte-lista: 'item lista';
+$fonte-principal: 'principal';
