@@ -15,9 +15,9 @@ export default class Listas extends Component {
         }
         this.service = new ListaService();
     }
-    componentDidMount() {
+    async componentDidMount() {
         const listas =
-            this.service.recuperarListas();
+            await this.service.recuperarListas();
         this.setState({ listas });
     }
     render() {
