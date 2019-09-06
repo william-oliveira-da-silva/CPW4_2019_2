@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Menu from '../menu/Menu';
+import Menu from '../../components/menu/Menu';
 import logo from '../../img/logo.png';
 import ListaService from '../../services/ListaService';
 import './Lista.scss';
@@ -50,10 +50,10 @@ export default class Listas extends Component {
 
                         {
                             /**
-                             * Neste trecho de código,
-                             * operador AND (&&) atua como
+                             * Neste trecho de código, 
+                             * o operador AND (&&) atua como
                              * um operador de ligação entre a
-                             * condição lógica e o código de
+                             * condição lógica e o código de 
                              * apresentação a ser renderizado.
                              */
                             !this.state.listas &&
@@ -62,8 +62,13 @@ export default class Listas extends Component {
 
                         {
                             this.state.listas &&
-                            <p id="mensagemNenhumaLista">Clique no botão abaixo para cadastrar uma nova lista</p>
+                            <p id="mensagemNenhumaLista">
+                                Clique no botão abaixo
+                                para cadastrar uma nova
+                                lista!
+                            </p>
                         }
+
                         <div id="listagem">
                             {listas}
                         </div>

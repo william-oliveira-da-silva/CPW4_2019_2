@@ -1,4 +1,4 @@
-@import '../Cores';
+@import '../../Cores';
 @import '../../fonts/Fontes';
 
 .conteiner {
@@ -9,20 +9,24 @@
         font-family: $fonte-principal;
         padding-left: 5px;
     }
-    #mensagemNenhumaLista{
-        color:$cor-titulo;
-        font-family: $fonte-lista;
+
+    #mensagemNenhumaLista {
+        color: $cor-titulo;
+        font-size: 110%;
+        font-family: $fonte-principal;
         text-align: center;
         margin-top: 40px;
     }
+
     #listagem {
         margin: 5px;
 
         .item {
             text-align: center;
             font-family: $fonte-principal;
-            color: $cor-titulo;
-            background-color: $cor-fundo-item1;
+            font-size: 110%;
+            color: rgba(245, 245, 245, 0.931);
+            background-color: rgba(4, 38, 83, 0.863);
             padding: 25px;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -33,36 +37,39 @@
         margin: 5px;
 
         #botaoNovaLista {
-            float: right;
-            padding: 15px;
+            padding: 15px 20px 15px 15px;
             background-color: $cor-menu;
             border-radius: 50%;
+            float: right;
 
             img {
-                width: 50px;
+                width: 40px;
             }
         }
     }
 }
 
-#formNovaLista{
+#formNovaLista {
     padding: 10px;
 
-    input{
+    input {
         display: block;
         margin: auto;
 
-        &[type=text]{
+        &[type=text] {
             width: 80%;
-            height: 25px;
+            height: 35px;
             font-size: 100%;
-            border: 1px solid #aaaaaa;
+            border: 1px solid $cor-menu;
             border-radius: 5px;
+            margin-bottom: 20px;
             font-family: $fonte-principal;
+            padding: 5px 10px;
         }
-        &[type=submit]{
+
+        &[type=submit] {
             width: 40%;
-            padding: 10px;
+            padding: 15px;
             background-color: $cor-menu;
             color: white;
             border-radius: 7px;
@@ -70,6 +77,7 @@
             font-family: $fonte-principal;
         }
     }
-    
-   
+
+
+
 }
