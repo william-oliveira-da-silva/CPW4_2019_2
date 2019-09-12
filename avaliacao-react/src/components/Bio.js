@@ -6,14 +6,17 @@ export default class Sobre extends Component {
             <div>
                 <h3>Sobre</h3>
                 <p>
-                    Este projeto foi desenvolvido com
-                    a biblioteca
-                     <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org">React</a>.
+                    Discente: William de Oliveira.
                 </p>
                 <p>
-                    Este exemplo foi criado em sala
-                    de aula na disciplina Construção
-                    de Páginas Web IV.
+                    Nascido na Cidade de Aquidauana.
+                <p>
+                </p>
+                    Ensino Médio completo em Escola Publica.
+                </p>
+                <p>
+                    Atualmente Cursando Tecnologia em Sistema para Internet no 
+                    Istituto Federal de Mato Grosso do Sul - Campus Aquidauana.
                 </p>
             </div> 
         );

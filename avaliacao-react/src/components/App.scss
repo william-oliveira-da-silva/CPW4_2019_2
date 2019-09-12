@@ -1,11 +1,17 @@
+@import './Cores';
+
 .conteudo {
-    padding: 20px 10px;
+    padding: 1% 0% 0% 16%;        
+
+    h3 {
+        color: $cor-titulo;
+        font-size: 200%;
+        padding-top:0px;
+    }
+    p {
+        font-size: 120%;
+    }
 }
 
-h3 {
-    color: rgb(104, 96, 124);
-}
 
-p {
-    font-size: 90%;
-}
+

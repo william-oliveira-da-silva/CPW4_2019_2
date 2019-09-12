@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import './Banner.scss';
+import './Menu.scss';
 
 export default class Banner extends Component {
     render() {
-        return (
+        return ( 
             <div className="banner">
                 <span id="titulo">
                     <Link to="/home">Will</Link>
                 </span>
-                <ul id="menu">
+                <ul id="menu"> 
                     <li>
                         <Link to="/home">Home</Link>
                     </li>

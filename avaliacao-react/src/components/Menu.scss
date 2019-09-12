@@ -1,0 +1,51 @@
+@import './Cores';
+@import '../fonts/Fontes';
+.banner {
+    background-color: $cor-menu;
+    margin-top: 0px;
+    padding: 20px 20px 20px 20px;
+    font-family: $fonte-principal;
+    height: 400px;
+    width:10%;
+    position: fixed;
+    
+
+    #titulo {
+        font-size: 180%;
+        font-weight: bold;
+        margin-right: 10px;
+        
+
+            a {
+                color: white;
+                text-decoration: none;
+            
+            }
+            a:hover {
+                color:$cor-fundo-item1;
+            }
+    
+    }
+
+    #menu {
+        list-style: none;
+        display: inline;
+
+            li {
+                display: block;
+                margin-right: 20px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+                    :hover {
+                        border-bottom: 3px solid $cor-fundo-item1;
+                    }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 140%;
+            } 
+    }
+}

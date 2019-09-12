@@ -4,6 +4,8 @@ import ItemContato from './ItemContato';
 import email from '../img/email.png';
 import fone from '../img/fone.png';
 import endereco from '../img/endereco.png';
+import git from '../img/icon.ico';
+import curriculo from '../img/curriculum.png';
 
 export default class Contato extends Component {
     render() {
@@ -17,11 +19,19 @@ export default class Contato extends Component {
                 <ItemContato
                     icone={fone}
                     descricao="Telefone"
-                    contato="(67) 3333-3333" />
+                    contato="(67) 4444-3333" />
                 <ItemContato
                     icone={email}
                     descricao="E-mail"
-                    contato="cpw4@email.com" />
+                    contato="will@email.com" />
+                <ItemContato
+                    icone={git}
+                    descricao="github"
+                    contato="https://github.com/william-oliveira-da-silva" />
+                <ItemContato
+                    icone={curriculo}
+                    descricao="curriculo"
+                    contato="https://wwws.cnpq.br/cvlattesweb/pkg_cv_estr.inicio" />
             </div>
         );
     }

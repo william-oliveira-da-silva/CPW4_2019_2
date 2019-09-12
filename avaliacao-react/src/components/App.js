@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import './App.scss';
-import Banner from './Banner';
+import Menu from './Menu';
 import Home from './Home';
 import Bio from './Bio';
 import Contato from './Contato';
@@ -16,7 +16,7 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Banner />
+        <Menu />
 
         <div className="conteudo">
           <Switch>
@@ -26,6 +26,7 @@ export default class App extends Component {
             <Redirect to="/home" />
           </Switch>
         </div>
+
       </BrowserRouter>
     )
   }
