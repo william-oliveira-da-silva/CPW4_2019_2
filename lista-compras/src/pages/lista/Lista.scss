@@ -25,11 +25,14 @@
             text-align: center;
             font-family: $fonte-principal;
             font-size: 110%;
-            color: rgba(245, 245, 245, 0.931);
             background-color: rgba(4, 38, 83, 0.863);
             padding: 25px;
             border-radius: 5px;
             margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: rgba(245, 245, 245, 0.931);
         }
     }
 

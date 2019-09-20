@@ -1,4 +1,6 @@
 import axios from 'axios';
+import itens from './itens';
+
 
 export default class ListaService {
 
@@ -17,6 +19,14 @@ export default class ListaService {
 
     async salvar(lista) {
         await this.api.post('/', lista);
+    }
+
+    recuperarItens (termo){
+        termo = termo.toLowerCase();
+        return itens.filter(item => {
+            let descricao = item.descricao.toLowerCase();
+            return descricao.includes(termo);
+        });
     }
 
 }
