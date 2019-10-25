@@ -1,0 +1,11 @@
+@font-face{
+    font-family: "decorativa";
+    src: url(./Courgette-Regular.ttf);
+}
+@font-face{
+    font-family: "padrao";
+    src: url(./RobotoCondensed-LightItalic.ttf);
+}
+
+$fonte-decorativo: "decorativa";
+$fonte-padrao: "padrao";
