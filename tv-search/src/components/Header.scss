@@ -1,0 +1,23 @@
+
+@import '../fonts/Fonts.scss';
+@import '../Cores';
+
+.header{
+    background-color: $cor1;
+    padding: 5px 10px ;
+
+    *{
+        vertical-align: middle;
+    }
+
+    img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    span{
+    color: white;
+    font-family: $fonte-decorativo;
+    font-size: 140%;
+    text-shadow: 2px 2px #555555;
+    }
+}
