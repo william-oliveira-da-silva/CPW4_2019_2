@@ -5,6 +5,8 @@ import logo from '../img/logo.png';
 import Header from '../components/Header';
 import SeriesService from '../services/SeriesService';
 import imgDefault from '../img/imgDefault.png';
+import './Pesquisar.scss';
+
  export default class Pesquisar extends Component {
 
   constructor(){
@@ -24,7 +26,7 @@ import imgDefault from '../img/imgDefault.png';
      * deve ser exibida
      */
     
-     this.setState({carregando: true, textoPesquisa: consulta});
+     this.setState({carregando: true, textoPesquisa: consulta, series: [] });
 
     this.service
     .pesquisar(consulta)
@@ -52,7 +54,7 @@ import imgDefault from '../img/imgDefault.png';
       </div>
       )
     }
-    );
+  );
 
     const naotemResultadoParaExibir = listaSeries.length === 0;
 
@@ -77,8 +79,9 @@ import imgDefault from '../img/imgDefault.png';
                 this.state.carregando &&
                 <div id="areaLoading">
                   <ReactLoading
+                    id="animacao"
                     type="bars"
-                    color="grey"
+                    color="#247BA0"
                     height="6%"
                     width="6%" />
                 </div>

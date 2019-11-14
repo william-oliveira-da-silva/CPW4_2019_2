@@ -1,0 +1,64 @@
+@import '../Cores';
+@import '../fonts/Fontes';
+
+
+#areaPesquisa{
+    margin: 50px 0px;
+    text-align: center;
+
+    #campoPesquisa{
+        width: 40%;
+        height: 30px;
+        text-align: center;
+        font-family: $fonte-padrao;
+        font-size: 100%;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        box-shadow: 2px 1px 9px #dddddd,
+                    -1px -1px 5px #cccccc ;
+    }
+}
+#animacao{
+    margin: auto;
+
+}
+
+#areaResultado{
+    margin: 0px 20px;
+
+    .serie{
+        display: inline-block;
+        width: call(100% / 3);
+        margin-bottom: 40px;
+
+        img, span{
+            display: block;
+            // text-align: center;
+        }
+        img{
+            margin: auto;
+            width: 80%;
+        }
+        span{
+            text-align: center;
+            font-family: $fonte-padrao;
+            font-size: 85%;
+            margin-top: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    #areaPesquisa{ 
+        #campoPesquisa{
+            width: 80%;
+        }
+    }
+    #areaResultado{
+        .serie{
+            display: block;
+            width: 100% ;
+        }
+    }
+}
+    
