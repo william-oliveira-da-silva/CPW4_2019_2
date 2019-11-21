@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactLoading from 'react-loading';
+import {Link} from 'react-router-dom';
 
 import logo from '../img/logo.png';
 import Header from '../components/Header';
@@ -42,6 +43,9 @@ import './Pesquisar.scss';
 
   render() {
     const {series, textoPesquisa} = this.state;
+    console.log(series);
+
+
     const listaSeries = series.map(serie => { 
       let imagem = imgDefault;
       if(serie.show.image && serie.show.image.medium){
@@ -49,8 +53,24 @@ import './Pesquisar.scss';
       }
       return (
       <div key={serie.show.id } className="serie">
-        <img src={imagem} alt="Cartaz da série"/>
-        <span>{serie.show.name}</span>
+
+         <Link to={
+          {
+            pathname:"/serie",
+            state: {serie , imagem}
+          }
+        }>
+          <img src={imagem} alt="Cartaz da série"/>
+        </Link>
+
+        <Link to={
+          {
+            pathname:"/serie",
+            state: {serie}
+          }
+        }>
+          <span>{serie.show.name}</span>
+        </Link>
       </div>
       )
     }
@@ -89,7 +109,7 @@ import './Pesquisar.scss';
               <div id="areaResultado">
                 {
                   (naotemResultadoParaExibir && usuarioEstaPesquisando) &&
-                  <span>Nenhuma série encontrada</span>
+                  <span id="mensagemNaoEncontrado">Nenhuma série encontrada</span>
                 }
                 {listaSeries}
               </div>

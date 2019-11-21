@@ -38,7 +38,7 @@
         }
         img{
             margin: auto;
-            width: 80%;
+            width: 90%;
         }
         span{
             text-align: center;
@@ -46,6 +46,19 @@
             font-size: 85%;
             margin-top: 10px;
         }
+        a{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: $cor1;
+            }
+        }
+    }
+    #mensagemNaoEncontrado{
+        display: block;
+        text-align: center;
+        font-family: $fonte-padrao;
     }
 }
 @media only screen and (max-width: 768px){
